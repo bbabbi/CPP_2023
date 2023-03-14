@@ -2,8 +2,16 @@
 
 int main(void) {
   int temp = 0;
-  int nums[10] = {43, 58, 33, 52, 99, 88, 29, 28, 51, 13};
   int i = 0, j = 0;
+  int nums[10];
+
+  printf("배열의 원소를 입력하세요. : ");
+  while(i < 10){
+    scanf("%d", &nums[i]);
+    i++;
+  }
+
+  i = 0;
 
   // nums 배열의 데이터 출력
   printf("데이터 출력: ");
