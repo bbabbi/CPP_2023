@@ -4,7 +4,7 @@ using namespace std;
 int sum(int a, int b){
 	int s = 0;
     for(int i=a; i<=b; i++)
-    	s += i;
+        s += i;
     return s;
 }
 
