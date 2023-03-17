@@ -9,6 +9,11 @@ using namespace std;
 
 //클래스 활용해야함. 나머지 조건은 만족함 OK
 
+class Counting {
+public :
+  char str;
+};
+
 int main(){
   char str[100];
   int cnt_small = 0, cnt_big = 0, cnt_num = 0;
