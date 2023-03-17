@@ -42,3 +42,4 @@ public :
     int lcm = (result.num1 * result.num2) / ggccdd;
     cout << "두 수의 최소공배수 : " << lcm << endl;
   }
+  //
