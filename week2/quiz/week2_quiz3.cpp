@@ -8,8 +8,8 @@ using namespace std;
 
 class Calculator {
 public:
-  int num1, num2;
-  char op;
+  int num1, num2; // 연산에 사용되는 숫자
+  char op; // 연산자
 };
 
 int main(){
