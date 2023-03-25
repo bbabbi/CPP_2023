@@ -14,11 +14,12 @@ private:
   int buying; // 구매자가 사려는 치킨 수
   int money; // 구매자가 가지고 있는 돈
   int pay; // 구매자가 내야할 금액
-  // int remain = HOWMANY - buying; // 구매하고 남은 치킨의 수
+
 public:
   void print(int buying, int money){
-    pay = PRICE * buying;
+    pay = PRICE * buying; // 구매자가 내야할 금액에 대한 연산 세팅
 
+    // 구매자가 가진 돈이 충분하다면, 거래 성립
     if(money >= pay){
       cout << "치킨판매자 현황" << endl;
       cout << "남은 치킨 : " << (HOWMANY - buying) << endl;
@@ -29,7 +30,7 @@ public:
       cout << "현재 잔액 : " << money - (PRICE * buying)<< endl;
       cout << "치킨 개수 : " << buying << endl;
     }
-    else{
+    else{ // 구매자가 구매하려는 금액보다 적은 돈을 가지고 있다면 거래 불가능.
       cout << "잔액 부족으로, 구매하실 수 없습니다." <<endl;
       cout << "금액대에 맞는 수의 치킨을 주문해주세요." <<endl;
     }
