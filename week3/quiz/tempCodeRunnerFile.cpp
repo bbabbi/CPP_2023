@@ -1,6 +1,6 @@
 /*
   2021112037 문채영
-  심화프로그래밍 실습3 과제2 week3_quiz4.cpp
+  심화프로그래밍 실습3 과제2 week3_quiz2.cpp
 */
 
 #include<iostream>
@@ -15,12 +15,11 @@ public:
   int nextInRange(int a, int b);
 };
 Random::Random(){
-  // 진정한 랜덤을 위해 srand 사용
   srand((unsigned)time(0));
 }
 
-int Random::next() { // 범위지정 안 하고 쓸 수 있는 난수 생성
-  //이 컴퓨터에서는 RAND_MAX가 32767이 아니어서 범위를 따로 지정해줘야했다
+int Random::next() {
+  //RAND_MAX가 32767이 아니어서 범위를 따로 지정해줘야했다
   return rand()%32767 + 1;
 } 
 int Random::nextInRange(int a, int b){

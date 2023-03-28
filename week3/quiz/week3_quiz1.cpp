@@ -8,6 +8,7 @@ using namespace std;
 
 class YoutubeSize {
 private :
+//빈칸 1
   int width;
   int height;
 
@@ -25,12 +26,15 @@ YoutubeSize::YoutubeSize(int w, int h){
 }
 
 int YoutubeSize::GetHeight() {
+  //빈칸 2
   return height;
 }
 int YoutubeSize::GetWidth() {
+  //빈칸 3
   return width;
 }
 
+//빈칸 4 - 매개변수 부분
 void YoutubeSize::ResizeWindow(int w, int h){
   if(w > 800) width = w;
   else width = 800;
@@ -42,13 +46,16 @@ void YoutubeSize::ResizeWindow(int w, int h){
 int main() {
   YoutubeSize mainWindow;
 
-  mainWindow.ResizeWindow(854, 540);
-  cout << mainWindow.GetWidth() << "x" << mainWindow.GetHeight() << endl;
-
-  mainWindow.ResizeWindow(1920,1080);
+  mainWindow.ResizeWindow(1920, 1080);
+  //빈칸 5
   cout << mainWindow.GetWidth() << "x" << mainWindow.GetHeight() << endl;
 
   mainWindow.ResizeWindow(3840,2160);
+  //빈칸 6
+  cout << mainWindow.GetWidth() << "x" << mainWindow.GetHeight() << endl;
+
+  mainWindow.ResizeWindow(5120,2880);
+  //빈칸 7
   cout << mainWindow.GetWidth() << "x" << mainWindow.GetHeight() << endl;
 
   return 0;
