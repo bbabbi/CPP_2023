@@ -1,5 +1,5 @@
 # CPP_2023
-[23-1]CPP_Programming
 
-### C++ programming
-2023-1 ) from March to June
+|학기|언어|교재|
+|----|---|---|
+|23-1|C++|명품C++프로그래밍|
