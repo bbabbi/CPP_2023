@@ -1,4 +1,4 @@
-// week7_quiz3.cpp
+// week7_quiz3_ver2.cpp
 // 2021112037 문채영
 
 #include<iostream>
@@ -10,26 +10,12 @@ class Person {
   double weight;
   string name;
 public:
-  Person();
-  Person(int id, string name);
-  Person(int id, string name, double weight);
+  //default 매개변수를 가진 생성자
+  Person(int id = 1, string name = "Alice", double weight = 74.9);
   void show() { cout << id << "번 " << weight << " " << name << endl; }
 };
 
-//생성자 중복 작성한 프로그램 구현
-Person::Person() {
-  id = 1;
-  weight = 74.9;
-  name = "Alice";
-}
-
-Person::Person(int id, string name) {
-  this->id = id;
-  weight = 74.9;
-  this->name = name;
-}
-
-Person::Person(int id, string name, double weight) {
+Person::Person(int id, string name, double weight){
   this->id = id;
   this->weight = weight;
   this->name = name;
