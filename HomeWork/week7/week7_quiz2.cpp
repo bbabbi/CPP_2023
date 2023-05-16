@@ -126,6 +126,8 @@ int main(){
     Measure *t = new Measure(height, width); // 동적생성
     t -> getTriangleArea();
     delete t; //할당해제
+
+    break;
   }
 
   case 4 : {//4. 정사각형의 면적
@@ -137,6 +139,7 @@ int main(){
     eq -> SetLine(length);
     eq -> getEqRectArea();
     delete eq; //할당해제
+
     break;
   }
 
@@ -149,6 +152,7 @@ int main(){
     cone -> SetHeight(height);
     cone -> getSphereVol();
     delete cone; // 할당해제
+
     break;
   }
 
@@ -160,6 +164,7 @@ int main(){
     Measure *sp = new Measure(radius);
     sp -> getSphereVol();
     delete sp; //할당해제
+
     break;
   }
 
@@ -172,6 +177,7 @@ int main(){
     cyl -> SetHeight(height);
     cyl -> getCylinderVol();
     delete cyl; //할당해제
+    
     break;
   }
   default : //1~7이 아닌 번호가 입력되었을 경우
